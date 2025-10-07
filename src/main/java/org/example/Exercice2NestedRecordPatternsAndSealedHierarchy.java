@@ -34,6 +34,7 @@ public class Exercice2NestedRecordPatternsAndSealedHierarchy {
                     String.format("🚗 Voiture %s de %d chevaux", marque, puissance);
             case Moto(Infos(String marque, int puissance)) ->
                     String.format("🏍️ Moto %s de %d chevaux", marque, puissance);
+            default -> "Type de véhicule inconnu";
         };
 
         System.out.println(message);
